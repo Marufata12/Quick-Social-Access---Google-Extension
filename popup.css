@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.phone-container {
+    width: 375px;
+    height: 667px;
+    background: #fff;
+    border: 16px solid #333;
+    border-radius: 36px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#socialMediaButtons {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #2878c4;
+}
+
+button.remove-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #dc3545; 
+    border: 2px solid #fff; 
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10; 
+}
+
+button.remove-icon svg {
+    fill: white; 
+    width: 16px; 
+    height: 16px;
+}
+
+button.remove-icon:hover {
+    background-color: #b72d2a; 
+}
+
+#addSocialMedia, #backToList {
+    margin: 10px;
+    padding: 10px 0;
+}
